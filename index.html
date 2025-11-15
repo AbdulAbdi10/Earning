@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selling with Integrity: The Islamic Guide to Lawful Earning</title>
+  <style>
+    :root {
+      --bg-page: #f3f4f7;
+      --bg-box: #ffffff;
+      --accent: #176b87;
+      --accent-soft: #e1eff5;
+      --text-main: #222222;
+      --text-muted: #666666;
+      --border-soft: #dde2ea;
+      --shadow-soft: 0 14px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #f9fafb, #e5e7eb 55%, #d1d5db);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      background: linear-gradient(
+        to right,
+        rgba(15, 23, 42, 0.96),
+        rgba(30, 64, 175, 0.94)
+      );
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .site-header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.8rem 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .site-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .site-title span.badge {
+      font-size: 0.7rem;
+      padding: 0.1rem 0.45rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.85rem;
+    }
+
+    .top-links a {
+      color: #e5f1ff;
+      text-decoration: none;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.32);
+      background: radial-gradient(circle at top, rgba(56, 189, 248, 0.15), transparent);
+      transition: background 0.2s ease, transform 0.1s ease, border 0.2s ease;
+    }
+
+    .top-links a:hover {
+      background: rgba(15, 23, 42, 0.7);
+      border-color: rgba(191, 219, 254, 0.9);
+      transform: translateY(-1px);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 1.5rem auto 3rem auto;
+      padding: 0 1.2rem 2rem;
+    }
+
+    .page {
+      background: var(--bg-box);
+      border-radius: 18px;
+      box-shadow: var(--shadow-soft);
+      padding: 2.5rem 2.75rem;
+      margin: 1.8rem auto;
+      border: 1px solid rgba(148, 163, 184, 0.26);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.05), transparent 55%);
+      pointer-events: none;
+    }
+
+    .page-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        padding: 1.7rem 1.4rem;
+        border-radius: 14px;
+      }
+    }
+
+    .page-header {
+      margin-bottom: 1.4rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .page-title {
+      font-size: 1.85rem;
+      margin: 0 0 0.4rem;
+      letter-spacing: 0.02em;
+    }
+
+    .page-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    h1, h2, h3 {
+      color: #111827;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 0.4rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin: 1.2rem 0 0.4rem;
+    }
+
+    p {
+      margin: 0.5rem 0 0.5rem;
+      font-size: 1.02rem;
+    }
+
+    p.lead {
+      font-size: 1.07rem;
+      color: #1f2933;
+    }
+
+    .meta-line {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .highlight-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.7rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.6rem;
+    }
+
+    .highlight-bar span.dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .toc {
+      margin-top: 0.6rem;
+    }
+
+    .toc-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-title span {
+      font-size: 0.8rem;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .toc-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem 1.25rem;
+      margin-top: 0.4rem;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc li {
+      margin: 0.15rem 0;
+      font-size: 0.98rem;
+    }
+
+    .toc a {
+      color: #1f2933;
+      text-decoration: none;
+      padding: 0.25rem 0.1rem;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background 0.18s ease, color 0.18s ease, transform 0.1s ease;
+    }
+
+    .toc a::before {
+      content: "§";
+      font-size: 0.85rem;
+      color: var(--accent);
+      opacity: 0.8;
+    }
+
+    .toc a:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+      transform: translateX(1px);
+    }
+
+    ul, ol {
+      margin: 0.4rem 0 0.4rem 1.3rem;
+      padding: 0;
+    }
+
+    li {
+      margin: 0.18rem 0;
+      font-size: 1.01rem;
+    }
+
+    blockquote {
+      margin: 0.7rem 0;
+      padding: 0.75rem 1rem;
+      border-left: 4px solid var(--accent);
+      background: #f3f6fb;
+      border-radius: 8px;
+      font-style: italic;
+      color: #111827;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 0.2rem;
+    }
+
+    .chapter-number {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 0.1rem;
+    }
+
+    .back-to-top {
+      margin-top: 1.4rem;
+      text-align: right;
+      font-size: 0.9rem;
+    }
+
+    .back-to-top a {
+      color: var(--accent);
+      text-decoration: none;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      border: 1px solid rgba(37, 99, 235, 0.35);
+      background: rgba(239, 246, 255, 0.9);
+      transition: background 0.18s ease, transform 0.1s ease, box-shadow 0.18s ease;
+    }
+
+    .back-to-top a:hover {
+      background: #dbeafe;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 1.5rem;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .site-header {
+        display: none;
+      }
+      main {
+        padding: 0;
+        margin: 0;
+      }
+      .page {
+        box-shadow: none;
+        border-radius: 0;
+        border: none;
+        margin: 0;
+        page-break-after: always;
+      }
+      .back-to-top {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-title">
+        Selling with Integrity
+        <span class="badge">Online Edition</span>
+      </div>
+      <div class="top-links">
+        <a href="#toc">Table of Contents</a>
+        <a href="#preface">Preface</a>
+        <a href="#chapter-1">Chapters</a>
+        <a href="#appendices">Appendices</a>
+        <a href="#about-author">About the Author</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cover Page -->
+    <section class="page" id="cover">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="highlight-bar">
+            <span class="dot"></span>
+            Faith • Commerce • Integrity
+          </div>
+          <h1>Selling with Integrity</h1>
+          <p class="page-subtitle">The Islamic Guide to Lawful Earning</p>
+        </div>
+
+        <p class="lead">
+          A practical handbook that brings together classical Islamic jurisprudence and modern professional ethics to guide Muslims in trade, sales, and business licensing—while keeping faith and integrity at the heart of every transaction.
+        </p>
+
+        <p style="margin-top: 1.4rem; font-size: 1.05rem;">
+          <strong>Author:</strong> Abdul Abdi
+        </p>
+        <p class="meta-line">
+          © 2025 Abdul Abdi. All rights reserved.
+        </p>
+
+        <p style="margin-top: 2.5rem; font-size: 0.98rem; color: #4b5563;">
+          No part of this book may be reproduced, distributed, or transmitted in any form or by any means without prior written permission of the author, except for brief quotations used in reviews, teaching, or scholarly work.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Go to Table of Contents ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table of Contents Page -->
+    <section class="page" id="toc">
+      <div class="page-inner">
+        <div class="page-header">
+          <h2 class="page-title">Table of Contents</h2>
+          <p class="page-subtitle">Linked for easy online reading</p>
+        </div>
+
+        <div class="toc">
+          <div class="toc-title">
+            Contents
+            <span>Navigate</span>
+          </div>
+          <div class="toc-columns">
+            <ul>
+              <li><a href="#preface">Preface</a></li>
+              <li><a href="#chapter-1">Chapter 1 – The Meaning of al-Bayʿ (Sale) in Islam</a></li>
+              <li><a href="#chapter-2">Chapter 2 – The Virtue of Honest Trade</a></li>
+              <li><a href="#chapter-3">Chapter 3 – The Concept of Fard al-ʿAyn in Commerce</a></li>
+            </ul>
+            <ul>
+              <li><a href="#chapter-4">Chapter 4 – The Conditions of a Valid Sale</a></li>
+              <li><a href="#chapter-5">Chapter 5 – Prohibited Transactions: Ribā, Gharar, and Deception</a></li>
+              <li><a href="#chapter-6">Chapter 6 – Modern Applications of Prohibited Sales</a></li>
+              <li><a href="#chapter-7">Chapter 7 – Truthfulness and Transparency: The Core Ethics of the Seller</a></li>
+            </ul>
+            <ul>
+              <li><a href="#chapter-8">Chapter 8 – Fair Pricing and Customer Rights</a></li>
+              <li><a href="#chapter-9">Chapter 9 – Contracts and Documentation: Building Trust Through Written Agreements</a></li>
+              <li><a href="#chapter-10">Chapter 10 – The Role of Market Supervision (Hisbah) and Public Accountability</a></li>
+              <li><a href="#chapter-11">Chapter 11 – Community Welfare and Charity in Trade</a></li>
+            </ul>
+            <ul>
+              <li><a href="#chapter-12">Chapter 12 – Resolving Disputes and Restoring Trust</a></li>
+              <li><a href="#chapter-13">Chapter 13 – Professional Sales Ethics Training Modules</a></li>
+              <li><a href="#chapter-14">Chapter 14 – Steps to Obtain a Sales License – Integrating Faith and Regulation</a></li>
+              <li><a href="#chapter-15">Chapter 15 – Assessment and Practical Scenarios</a></li>
+            </ul>
+            <ul>
+              <li><a href="#conclusion">Conclusion – The Path to Becoming a Trustworthy Merchant</a></li>
+              <li><a href="#appendices">Appendices</a></li>
+              <li><a href="#about-author">About the Author</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="back-to-top">
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preface Page -->
+    <section class="page" id="preface">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="section-label">Preface</div>
+          <h2 class="page-title">Preface</h2>
+        </div>
+
+        <p>
+          Trade has always been central to human civilization. From the bustling markets of Madinah to today’s digital economy, buying and selling remain the foundation of livelihood and community. In Islam, trade is not merely a way to earn—it is an act of worship when carried out with honesty, fairness, and trust.
+        </p>
+
+        <p>
+          The Prophet Muhammad ﷺ was himself a merchant known as <em>al-Amīn</em>—the Trustworthy One. His life demonstrated that success in commerce is measured not by profit alone but by sincerity, justice, and service to people.
+        </p>
+
+        <p>
+          This manual combines classical Islamic jurisprudence (<em>fiqh al-muʿāmalāt</em>) with modern professional ethics. It is a training guide for anyone who wishes to buy, sell, or obtain a business license while keeping faith and integrity at the core of their work.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 1 Page -->
+    <section class="page" id="chapter-1">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 1</div>
+          <h2 class="page-title">The Meaning of al-Bayʿ (Sale) in Islam</h2>
+        </div>
+
+        <p>
+          The Arabic word <em>al-Bayʿ</em> literally means “exchange.” In Islamic law, it refers to the transfer of ownership by mutual consent for a lawful benefit.
+        </p>
+
+        <p>
+          Trade in Islam is not just an economic act—it is a moral contract built on trust. Allah says:
+        </p>
+
+        <blockquote>
+          “O you who believe, do not consume one another’s wealth unjustly, but only through lawful trade by mutual consent.” (Q 4:29)
+        </blockquote>
+
+        <p>
+          The Prophet ﷺ emphasized clarity and honesty as the essence of every sale. A lawful transaction protects wealth, faith, and community harmony.
+        </p>
+
+        <h3>Key Points</h3>
+        <ul>
+          <li>A valid sale requires clear consent and knowledge of price and item.</li>
+          <li>Lawful profit must come from real value, not deceit or exploitation.</li>
+          <li>Learning the rules of sale is <em>Fard al-ʿAyn</em> for anyone engaged in trade.</li>
+        </ul>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 2 Page -->
+    <section class="page" id="chapter-2">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 2</div>
+          <h2 class="page-title">The Virtue of Honest Trade</h2>
+        </div>
+
+        <blockquote>
+          The Prophet ﷺ said: “The truthful and trustworthy merchant will be with the Prophets, the truthful, and the martyrs.” (Tirmidhī)
+        </blockquote>
+
+        <p>
+          Honesty (<em>ṣidq</em>) and trust (<em>amānah</em>) transform ordinary business into worship. A truthful seller discloses faults, keeps promises, and treats customers with respect.
+        </p>
+
+        <h3>Practical Guidelines</h3>
+        <ul>
+          <li>Be transparent in quality, quantity, and pricing.</li>
+          <li>Avoid exaggeration or emotional manipulation.</li>
+          <li>Honor delivery and refund commitments.</li>
+          <li>Seek blessing (<em>barakah</em>) over excess profit.</li>
+        </ul>
+
+        <p>
+          Deception may bring quick gain, but truth builds lifelong trust and spiritual reward.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 3 Page -->
+    <section class="page" id="chapter-3">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 3</div>
+          <h2 class="page-title">The Concept of Fard al-ʿAyn in Commerce</h2>
+        </div>
+
+        <p>
+          <em>Fard al-ʿAyn</em> means a personal obligation every Muslim must fulfill individually. Scholars explain that when a person works in trade, it becomes personally obligatory to learn the rulings of buying and selling.
+        </p>
+
+        <h3>Why Knowledge Is Mandatory</h3>
+        <ul>
+          <li>Protects faith from haram income.</li>
+          <li>Safeguards wealth from dispute and loss.</li>
+          <li>Strengthens society through fair markets.</li>
+        </ul>
+
+        <p>
+          Imām al-Ghazālī said:
+        </p>
+
+        <blockquote>
+          “It is obligatory upon every Muslim to learn what he needs for the correctness of his worship and his transactions.”
+        </blockquote>
+
+        <p>
+          In the modern world this includes understanding contracts, digital sales, consumer rights, and financial ethics. Learning these is both worship and professionalism.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 4 Page -->
+    <section class="page" id="chapter-4">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 4</div>
+          <h2 class="page-title">The Conditions of a Valid Sale</h2>
+        </div>
+
+        <p>
+          Islamic law ensures that every exchange of wealth is transparent and fair. A sale that fulfills its conditions is valid (<em>ṣaḥīḥ</em>); one that ignores them risks injustice.
+        </p>
+
+        <h3>The Four Pillars of a Sale</h3>
+        <ul>
+          <li><strong>Seller (<em>Bāʾiʿ</em>)</strong> – the one transferring ownership.</li>
+          <li><strong>Buyer (<em>Mushtarī</em>)</strong> – the one receiving ownership.</li>
+          <li><strong>Subject (<em>Mabīʿ</em>)</strong> – the item or service exchanged.</li>
+          <li><strong>Price (<em>Thaman</em>)</strong> – the payment or compensation.</li>
+        </ul>
+
+        <p>
+          These connect through offer and acceptance (<em>ījāb wa-qabūl</em>), which complete the contract.
+        </p>
+
+        <h3>Five Conditions for Validity</h3>
+        <ul>
+          <li><strong>Mutual Consent (<em>Tarāḍī</em>)</strong> – no coercion or deception.</li>
+          <li><strong>Lawful Ownership (<em>Qabḍ</em>)</strong> – the seller must own or control the item.</li>
+          <li><strong>Known Item (<em>Maʿlūm</em>)</strong> – the product and price must be clearly defined.</li>
+          <li><strong>Lawful Object (<em>Mubāḥ</em>)</strong> – no haram goods or services.</li>
+          <li><strong>Deliverability</strong> – the item must exist and be transferable.</li>
+        </ul>
+
+        <h3>Checklist for Traders</h3>
+        <ul>
+          <li>Do both sides fully understand and agree?</li>
+          <li>Is the price clear and fair?</li>
+          <li>Is delivery certain?</li>
+        </ul>
+
+        <p>
+          These questions turn every transaction into an act of justice.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 5 Page -->
+    <section class="page" id="chapter-5">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 5</div>
+          <h2 class="page-title">Prohibited Transactions: Ribā, Gharar, and Deception</h2>
+        </div>
+
+        <h3>Ribā (Usury or Interest)</h3>
+        <p>
+          Any guaranteed gain on a loan or exchange without lawful risk is <em>ribā</em>, forbidden by Allah:
+        </p>
+
+        <blockquote>
+          “Allah has permitted trade and forbidden ribā.” (Q 2:275)
+        </blockquote>
+
+        <h4>Modern Forms</h4>
+        <ul>
+          <li>Interest on credit cards or loans</li>
+          <li>Hidden time-based surcharges</li>
+          <li>“Buy now – pay later” with added fees</li>
+        </ul>
+
+        <p>
+          Lawful alternatives include <em>Murābaḥah</em> (cost-plus sale), <em>Ijārah</em> (lease), and <em>Qard Ḥasan</em> (interest-free loan).
+        </p>
+
+        <h3>Gharar (Excessive Uncertainty)</h3>
+        <p>
+          Selling what one cannot deliver or describe clearly—like unseen goods or hidden fees—creates <em>gharar</em> and invalidates the sale.
+        </p>
+
+        <h3>Deception (Ghish and Tadlīs)</h3>
+        <p>
+          Concealing defects, inflating prices, or using fake reviews are modern forms of <em>ghish</em>.
+        </p>
+
+        <blockquote>
+          “Whoever deceives us is not of us.” (Muslim)
+        </blockquote>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 6 Page -->
+    <section class="page" id="chapter-6">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 6</div>
+          <h2 class="page-title">Modern Applications of Prohibited Sales</h2>
+        </div>
+
+        <p>
+          Islamic ethics apply equally to today’s digital and financial systems.
+        </p>
+
+        <h3>Examples</h3>
+        <ul>
+          <li>Pyramid schemes: profit from recruitment, not real sales → ḥarām.</li>
+          <li>Online scams &amp; fake ads: digital deception.</li>
+          <li>Speculative trading: profit from chance, not ownership → like gambling.</li>
+          <li>Hidden fees or predatory pricing: violates mutual consent.</li>
+          <li>Unethical products or labor: forbidden harm (<em>ḍarar</em>).</li>
+        </ul>
+
+        <h3>Ethical Compliance</h3>
+        <ul>
+          <li>Use transparent pricing and refund policies.</li>
+          <li>Verify sources and product authenticity.</li>
+          <li>Respect privacy and data honesty.</li>
+          <li>Promote sustainability and fair labor.</li>
+        </ul>
+
+        <p>
+          True <em>barakah</em> flows where honesty governs commerce.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 7 Page -->
+    <section class="page" id="chapter-7">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 7</div>
+          <h2 class="page-title">Truthfulness and Transparency: The Core Ethics of the Seller</h2>
+        </div>
+
+        <h3>Truthfulness (Ṣidq)</h3>
+        <blockquote>
+          The Prophet ﷺ said: “Truthfulness leads to righteousness, and righteousness leads to Paradise.” (Bukhārī &amp; Muslim)
+        </blockquote>
+
+        <p>
+          A truthful merchant never manipulates facts or hides defects. Truth in speech, intention, and action turns trade into worship.
+        </p>
+
+        <h3>Transparency (Bayān al-Ḥaqīqah)</h3>
+        <p>
+          Being clear about what you sell, its quality, and its terms fulfills the hadith:
+        </p>
+
+        <blockquote>
+          “When the buyer and seller are truthful and transparent, their sale is blessed.” (Bukhārī &amp; Muslim)
+        </blockquote>
+
+        <h3>Practical Steps</h3>
+        <ul>
+          <li>Disclose all defects.</li>
+          <li>Use accurate photos and descriptions.</li>
+          <li>Give full pricing and delivery information.</li>
+          <li>Keep promises and deadlines.</li>
+        </ul>
+
+        <p>
+          Honesty invites <em>barakah</em> and customer trust.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 8 Page -->
+    <section class="page" id="chapter-8">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 8</div>
+          <h2 class="page-title">Fair Pricing and Customer Rights</h2>
+        </div>
+
+        <p>
+          Islam allows profit but forbids exploitation.
+        </p>
+
+        <blockquote>
+          “Give full measure and weight with justice, and do not deprive people of their due.” (Q 11:85)
+        </blockquote>
+
+        <h3>Fair Pricing Principles</h3>
+        <ul>
+          <li>Profit must reflect service and risk, not greed.</li>
+          <li>No fake discounts or inflated “original prices.”</li>
+          <li>Customers have the right to full information and choice.</li>
+          <li>Overpricing essentials in hardship times is unethical.</li>
+        </ul>
+
+        <blockquote>
+          “May Allah show mercy to one who is gentle when he sells, when he buys, and when he collects payment.” (Bukhārī)
+        </blockquote>
+
+        <h3>Checklist for Sellers</h3>
+        <ul>
+          <li>Are my prices fair and disclosed?</li>
+          <li>Do I handle complaints with respect?</li>
+          <li>Do I view customers as partners in good, not targets of profit?</li>
+        </ul>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 9 Page -->
+    <section class="page" id="chapter-9">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 9</div>
+          <h2 class="page-title">Contracts and Documentation: Building Trust Through Written Agreements</h2>
+        </div>
+
+        <blockquote>
+          “O you who believe! When you contract a debt for a fixed period, write it down.” (Q 2:282)
+        </blockquote>
+
+        <h3>Purpose of Contracts</h3>
+        <ul>
+          <li>Protects both parties.</li>
+          <li>Clarifies rights and duties.</li>
+          <li>Prevents forgetfulness and dispute.</li>
+        </ul>
+
+        <h3>Essential Elements</h3>
+        <ul>
+          <li>Parties clearly identified.</li>
+          <li>Subject and price defined.</li>
+          <li>Payment and delivery terms stated.</li>
+          <li>Witnesses or signatures recorded.</li>
+        </ul>
+
+        <p>
+          In digital trade, emails and e-signatures fulfil the same purpose.
+        </p>
+
+        <p>
+          Tip: Recordkeeping is an act of worship—preserving trust (<em>amānah</em>).
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 10 Page -->
+    <section class="page" id="chapter-10">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 10</div>
+          <h2 class="page-title">The Role of Market Supervision (Hisbah) and Public Accountability</h2>
+        </div>
+
+        <h3>10.1 What Is Hisbah</h3>
+        <p>
+          In Islamic history, the <em>muḥtasib</em> was the market supervisor who ensured fair trade, honest weights, and public decency. The system of <em>hisbah</em> represents the Qur’anic command:
+        </p>
+
+        <blockquote>
+          “Let there arise from you a group that enjoins good and forbids wrong.” (Q 3:104)
+        </blockquote>
+
+        <h3>10.2 Modern Equivalents</h3>
+        <p>
+          Today, <em>hisbah</em> lives on through:
+        </p>
+        <ul>
+          <li>Consumer protection agencies</li>
+          <li>Business licensing boards</li>
+          <li>Regulatory bodies</li>
+          <li>Community accountability programs</li>
+        </ul>
+
+        <p>
+          A trustworthy merchant welcomes oversight because transparency strengthens both reputation and faith.
+        </p>
+
+        <h3>10.3 Duties of the Ethical Seller</h3>
+        <ul>
+          <li>Cooperate with inspections.</li>
+          <li>Report unfair or deceptive practices.</li>
+          <li>Support community initiatives that build trust.</li>
+        </ul>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 11 Page -->
+    <section class="page" id="chapter-11">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 11</div>
+          <h2 class="page-title">Community Welfare and Charity in Trade</h2>
+        </div>
+
+        <h3>11.1 Wealth With Purpose</h3>
+        <p>
+          Trade sustains society, not just individuals. The Prophet ﷺ said:
+        </p>
+
+        <blockquote>
+          “The upper hand is better than the lower hand.” (Bukhārī)
+        </blockquote>
+
+        <p>
+          Lawful wealth enables generosity and stability in the community.
+        </p>
+
+        <h3>11.2 Zakat on Merchandise</h3>
+        <p>
+          Merchants must give zakat on trade goods annually:
+        </p>
+        <ul>
+          <li>Evaluate stock at market value.</li>
+          <li>Deduct debts.</li>
+          <li>Pay 2.5% as zakat.</li>
+        </ul>
+
+        <p>
+          Zakat purifies wealth and circulates opportunity.
+        </p>
+
+        <h3>11.3 Beyond Zakat: Social Responsibility</h3>
+        <p>
+          Voluntary charity (<em>ṣadaqah</em>) in trade can include:
+        </p>
+        <ul>
+          <li>Supporting apprenticeships or small business grants.</li>
+          <li>Promoting environmental stewardship.</li>
+          <li>Donating goods or services to those in need.</li>
+        </ul>
+
+        <p>
+          The believer’s trade benefits both self and society.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 12 Page -->
+    <section class="page" id="chapter-12">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 12</div>
+          <h2 class="page-title">Resolving Disputes and Restoring Trust</h2>
+        </div>
+
+        <h3>12.1 Spirit of Reconciliation</h3>
+        <p>
+          Islam encourages peaceful resolution:
+        </p>
+
+        <blockquote>
+          “Reconciliation is best.” (Q 4:128)
+        </blockquote>
+
+        <h3>12.2 Steps to Resolve Disputes</h3>
+        <ul>
+          <li>Discuss privately with respect.</li>
+          <li>Seek mediation by a neutral person.</li>
+          <li>Use arbitration if necessary.</li>
+          <li>Resort to court only when all else fails.</li>
+        </ul>
+
+        <h3>12.3 Repentance and Restitution</h3>
+        <p>
+          If a merchant wrongs another—through overcharging, defective goods, or false claims—they must:
+        </p>
+        <ul>
+          <li>Admit the mistake.</li>
+          <li>Compensate or refund.</li>
+          <li>Seek forgiveness from Allah.</li>
+        </ul>
+
+        <p>
+          Lesson: Restoring one wronged customer is better than gaining ten new ones through deceit.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 13 Page -->
+    <section class="page" id="chapter-13">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 13</div>
+          <h2 class="page-title">Professional Sales Ethics Training Modules</h2>
+        </div>
+
+        <h3>13.1 Objectives</h3>
+        <p>
+          To transform knowledge into action through structured, continuous training.
+        </p>
+
+        <h3>13.2 Core Modules</h3>
+        <ul>
+          <li>Islamic Principles of Trade — lawful vs. unlawful earnings.</li>
+          <li>Character Development — truthfulness, patience, and humility.</li>
+          <li>Customer Service Excellence — listening and empathy.</li>
+          <li>Digital Integrity — privacy, security, and honesty online.</li>
+          <li>Financial Literacy — budgeting and risk management.</li>
+        </ul>
+
+        <h3>13.3 Methods</h3>
+        <ul>
+          <li>Case studies and role plays.</li>
+          <li>Peer feedback and reflection.</li>
+          <li>Periodic ethics exams and pledges.</li>
+        </ul>
+
+        <h3>13.4 Certification</h3>
+        <p>
+          Graduates who complete training and sign the Code of Trustworthy Conduct may receive recognition as Ethical Seller or Halal Business Operator.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 14 Page -->
+    <section class="page" id="chapter-14">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 14</div>
+          <h2 class="page-title">Steps to Obtain a Sales License – Integrating Faith and Regulation</h2>
+        </div>
+
+        <h3>14.1 Why Licensing Matters</h3>
+        <p>
+          Licensing confirms legal and ethical responsibility. For Muslims, it fulfills <em>Fard al-ʿAyn</em> because it prevents harm and protects trust.
+        </p>
+
+        <h3>14.2 Steps to Follow</h3>
+        <ul>
+          <li>Study this manual or equivalent course.</li>
+          <li>Pass an ethics assessment.</li>
+          <li>Register business with legal authorities.</li>
+          <li>Take the Ethical Oath.</li>
+          <li>Maintain records and renew license regularly.</li>
+        </ul>
+
+        <h3>14.3 The Oath of Integrity</h3>
+        <blockquote>
+          “I pledge before Allah to trade truthfully, avoid deceit and unlawful gain, honor customers’ rights, and seek blessing in every transaction.”
+        </blockquote>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 15 Page -->
+    <section class="page" id="chapter-15">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="chapter-number">Chapter 15</div>
+          <h2 class="page-title">Assessment and Practical Scenarios</h2>
+        </div>
+
+        <h3>15.1 Self-Reflection Questions</h3>
+        <ul>
+          <li>Have I ever misrepresented a product?</li>
+          <li>Do I disclose full cost and conditions?</li>
+          <li>How do I handle complaints?</li>
+          <li>Would I be content if this transaction were shown to the Prophet ﷺ?</li>
+        </ul>
+
+        <h3>15.2 Case Exercises</h3>
+        <ul>
+          <li>A customer receives a defective item—what is just response?</li>
+          <li>Supplier offers a shortcut involving ribā—what do you do?</li>
+          <li>Market shortage raises prices—what is ethical limit?</li>
+        </ul>
+
+        <h3>15.3 Continuous Improvement</h3>
+        <p>
+          Keep an Ethical Ledger to record weekly decisions and reflections on integrity.
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusion Page -->
+    <section class="page" id="conclusion">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="section-label">Conclusion</div>
+          <h2 class="page-title">The Path to Becoming a Trustworthy Merchant</h2>
+        </div>
+
+        <p>
+          Trade done with faith and honesty is worship. The Prophet ﷺ was a merchant before a Messenger, and his character set the standard for all who earn their living.
+        </p>
+
+        <h3>Key Reminders</h3>
+        <ul>
+          <li>Commerce is an act of devotion when lawful and just.</li>
+          <li>Wealth gained ethically nourishes both heart and community.</li>
+          <li>True success lies in <em>barakah</em>, not volume.</li>
+        </ul>
+
+        <blockquote>
+          “And say, ‘Work, for Allah will see your deeds, and His Messenger and the believers.’” (Q 9:105)
+        </blockquote>
+
+        <h3>Supplication</h3>
+        <p>
+          “O Allah, bless our trades with truth, protect our hearts from greed, make our earnings pure, and our wealth a means of goodness in this world and the next. Āmīn.”
+        </p>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appendices Page -->
+    <section class="page" id="appendices">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="section-label">Appendices</div>
+          <h2 class="page-title">Appendices</h2>
+        </div>
+
+        <h3>Appendix A – Selected Qurʾānic Verses on Trade</h3>
+        <ul>
+          <li>(Q 2:275) Allah has permitted trade and forbidden ribā.</li>
+          <li>(Q 4:29) Trade by mutual consent.</li>
+          <li>(Q 5:1) Fulfill your contracts.</li>
+          <li>(Q 83:1–3) Woe to those who cheat in measure and weight.</li>
+        </ul>
+
+        <h3>Appendix B – Key Hadiths for Merchants</h3>
+        <ul>
+          <li>“The truthful merchant will be with the prophets and martyrs.” (Tirmidhī)</li>
+          <li>“Whoever deceives us is not of us.” (Muslim)</li>
+          <li>“May Allah show mercy to one who is gentle when he sells and buys.” (Bukhārī)</li>
+        </ul>
+
+        <h3>Appendix C – Glossary of Terms</h3>
+        <ul>
+          <li><strong>Bayʿ</strong> — sale or exchange.</li>
+          <li><strong>Ribā</strong> — usury or interest.</li>
+          <li><strong>Gharar</strong> — excessive uncertainty.</li>
+          <li><strong>Amānah</strong> — trust.</li>
+          <li><strong>Barakah</strong> — divine blessing.</li>
+        </ul>
+
+        <h3>Appendix D – Sample Ethical Code</h3>
+        <ul>
+          <li>Be honest in speech and action.</li>
+          <li>Disclose all product details.</li>
+          <li>Honor agreements.</li>
+          <li>Avoid harm and unlawful gain.</li>
+          <li>Give back to society.</li>
+        </ul>
+
+        <div class="back-to-top">
+          <a href="#toc">Back to contents ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the Author Page -->
+    <section class="page" id="about-author">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="section-label">Author</div>
+          <h2 class="page-title">About the Author</h2>
+        </div>
+
+        <p>
+          Abdul Abdi is a Software Architect, entrepreneur, and community leader dedicated to empowering others through education, technology, and faith-based values. He is also a devoted husband and father of five amazing children who inspire his commitment to integrity, learning, and service.
+        </p>
+
+        <div class="footer-note">
+          © 2025 Abdul Abdi. All rights reserved.<br />
+          “Selling with Integrity: The Islamic Guide to Lawful Earning”
+        </div>
+
+        <div class="back-to-top">
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
