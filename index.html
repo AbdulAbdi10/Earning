@@ -212,6 +212,7 @@
       background: var(--accent);
     }
 
+    /* Updated TOC styles */
     .toc {
       margin-top: 0.6rem;
     }
@@ -235,44 +236,52 @@
       letter-spacing: 0.06em;
     }
 
-    .toc-columns {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 0.75rem 1.25rem;
+    .toc-table {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 0.4rem;
     }
 
-    .toc ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .toc-table td {
+      padding: 0.25rem 0.3rem;
+      font-size: 0.98rem;
+      vertical-align: top;
     }
 
-    .toc li {
-      margin: 0.15rem 0;
-      font-size: 0.98rem;
+    .toc-table td.number {
+      width: 2.2rem;
+      text-align: right;
+      padding-right: 0.6rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .toc-table tr:nth-child(odd) td {
+      background: rgba(248, 250, 252, 0.7);
+    }
+
+    .toc-table tr:nth-child(even) td {
+      background: rgba(241, 245, 249, 0.7);
+    }
+
+    .toc-table tr:hover td {
+      background: var(--accent-soft);
     }
 
     .toc a {
       color: #1f2933;
       text-decoration: none;
-      padding: 0.25rem 0.1rem;
+      display: block;
+      padding: 0.25rem 0.15rem;
       border-radius: 6px;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
       transition: background 0.18s ease, color 0.18s ease, transform 0.1s ease;
     }
 
     .toc a::before {
-      content: "§";
-      font-size: 0.85rem;
-      color: var(--accent);
-      opacity: 0.8;
+      content: none;
     }
 
     .toc a:hover {
-      background: var(--accent-soft);
       color: var(--accent);
       transform: translateX(1px);
     }
@@ -430,37 +439,87 @@
             Contents
             <span>Navigate</span>
           </div>
-          <div class="toc-columns">
-            <ul>
-              <li><a href="#preface">Preface</a></li>
-              <li><a href="#chapter-1">Chapter 1 – The Meaning of al-Bayʿ (Sale) in Islam</a></li>
-              <li><a href="#chapter-2">Chapter 2 – The Virtue of Honest Trade</a></li>
-              <li><a href="#chapter-3">Chapter 3 – The Concept of Fard al-ʿAyn in Commerce</a></li>
-            </ul>
-            <ul>
-              <li><a href="#chapter-4">Chapter 4 – The Conditions of a Valid Sale</a></li>
-              <li><a href="#chapter-5">Chapter 5 – Prohibited Transactions: Ribā, Gharar, and Deception</a></li>
-              <li><a href="#chapter-6">Chapter 6 – Modern Applications of Prohibited Sales</a></li>
-              <li><a href="#chapter-7">Chapter 7 – Truthfulness and Transparency: The Core Ethics of the Seller</a></li>
-            </ul>
-            <ul>
-              <li><a href="#chapter-8">Chapter 8 – Fair Pricing and Customer Rights</a></li>
-              <li><a href="#chapter-9">Chapter 9 – Contracts and Documentation: Building Trust Through Written Agreements</a></li>
-              <li><a href="#chapter-10">Chapter 10 – The Role of Market Supervision (Hisbah) and Public Accountability</a></li>
-              <li><a href="#chapter-11">Chapter 11 – Community Welfare and Charity in Trade</a></li>
-            </ul>
-            <ul>
-              <li><a href="#chapter-12">Chapter 12 – Resolving Disputes and Restoring Trust</a></li>
-              <li><a href="#chapter-13">Chapter 13 – Professional Sales Ethics Training Modules</a></li>
-              <li><a href="#chapter-14">Chapter 14 – Steps to Obtain a Sales License – Integrating Faith and Regulation</a></li>
-              <li><a href="#chapter-15">Chapter 15 – Assessment and Practical Scenarios</a></li>
-            </ul>
-            <ul>
-              <li><a href="#conclusion">Conclusion – The Path to Becoming a Trustworthy Merchant</a></li>
-              <li><a href="#appendices">Appendices</a></li>
-              <li><a href="#about-author">About the Author</a></li>
-            </ul>
-          </div>
+
+          <table class="toc-table">
+            <tbody>
+              <tr>
+                <td class="number">1.</td>
+                <td><a href="#preface">Preface</a></td>
+              </tr>
+              <tr>
+                <td class="number">2.</td>
+                <td><a href="#chapter-1">Chapter 1 – The Meaning of al-Bayʿ (Sale) in Islam</a></td>
+              </tr>
+              <tr>
+                <td class="number">3.</td>
+                <td><a href="#chapter-2">Chapter 2 – The Virtue of Honest Trade</a></td>
+              </tr>
+              <tr>
+                <td class="number">4.</td>
+                <td><a href="#chapter-3">Chapter 3 – The Concept of Fard al-ʿAyn in Commerce</a></td>
+              </tr>
+              <tr>
+                <td class="number">5.</td>
+                <td><a href="#chapter-4">Chapter 4 – The Conditions of a Valid Sale</a></td>
+              </tr>
+              <tr>
+                <td class="number">6.</td>
+                <td><a href="#chapter-5">Chapter 5 – Prohibited Transactions: Ribā, Gharar, and Deception</a></td>
+              </tr>
+              <tr>
+                <td class="number">7.</td>
+                <td><a href="#chapter-6">Chapter 6 – Modern Applications of Prohibited Sales</a></td>
+              </tr>
+              <tr>
+                <td class="number">8.</td>
+                <td><a href="#chapter-7">Chapter 7 – Truthfulness and Transparency: The Core Ethics of the Seller</a></td>
+              </tr>
+              <tr>
+                <td class="number">9.</td>
+                <td><a href="#chapter-8">Chapter 8 – Fair Pricing and Customer Rights</a></td>
+              </tr>
+              <tr>
+                <td class="number">10.</td>
+                <td><a href="#chapter-9">Chapter 9 – Contracts and Documentation: Building Trust Through Written Agreements</a></td>
+              </tr>
+              <tr>
+                <td class="number">11.</td>
+                <td><a href="#chapter-10">Chapter 10 – The Role of Market Supervision (Hisbah) and Public Accountability</a></td>
+              </tr>
+              <tr>
+                <td class="number">12.</td>
+                <td><a href="#chapter-11">Chapter 11 – Community Welfare and Charity in Trade</a></td>
+              </tr>
+              <tr>
+                <td class="number">13.</td>
+                <td><a href="#chapter-12">Chapter 12 – Resolving Disputes and Restoring Trust</a></td>
+              </tr>
+              <tr>
+                <td class="number">14.</td>
+                <td><a href="#chapter-13">Chapter 13 – Professional Sales Ethics Training Modules</a></td>
+              </tr>
+              <tr>
+                <td class="number">15.</td>
+                <td><a href="#chapter-14">Chapter 14 – Steps to Obtain a Sales License – Integrating Faith and Regulation</a></td>
+              </tr>
+              <tr>
+                <td class="number">16.</td>
+                <td><a href="#chapter-15">Chapter 15 – Assessment and Practical Scenarios</a></td>
+              </tr>
+              <tr>
+                <td class="number">17.</td>
+                <td><a href="#conclusion">Conclusion – The Path to Becoming a Trustworthy Merchant</a></td>
+              </tr>
+              <tr>
+                <td class="number">18.</td>
+                <td><a href="#appendices">Appendices</a></td>
+              </tr>
+              <tr>
+                <td class="number">19.</td>
+                <td><a href="#about-author">About the Author</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="back-to-top">
