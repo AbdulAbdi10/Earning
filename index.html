@@ -131,13 +131,6 @@
       z-index: 1;
     }
 
-    @media (max-width: 720px) {
-      .page {
-        padding: 1.7rem 1.4rem;
-        border-radius: 14px;
-      }
-    }
-
     .page-header {
       margin-bottom: 1.4rem;
       padding-bottom: 1rem;
@@ -349,6 +342,92 @@
       font-size: 0.85rem;
       color: var(--text-muted);
       margin-top: 1.5rem;
+    }
+
+    /* MOBILE RESPONSIVE STYLES */
+    @media (max-width: 720px) {
+      body {
+        line-height: 1.6;
+      }
+
+      .site-header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+        padding: 0.6rem 0.9rem;
+      }
+
+      .site-title {
+        font-size: 0.95rem;
+      }
+
+      .top-links {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 0.2rem;
+      }
+
+      .top-links a {
+        font-size: 0.8rem;
+        white-space: nowrap;
+      }
+
+      main {
+        max-width: 100%;
+        margin: 1rem auto 2rem;
+        padding: 0 0.6rem 1.5rem;
+      }
+
+      .page {
+        padding: 1.4rem 1.1rem;
+        border-radius: 14px;
+        margin: 1.2rem auto;
+      }
+
+      .page-title {
+        font-size: 1.45rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      h3 {
+        font-size: 1.15rem;
+      }
+
+      p,
+      li {
+        font-size: 0.98rem;
+      }
+
+      .toc-table td {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page {
+        padding: 1.2rem 0.9rem;
+        margin: 1rem auto;
+      }
+
+      .toc-table td.number {
+        width: 1.9rem;
+        padding-right: 0.45rem;
+      }
+
+      .highlight-bar {
+        font-size: 0.75rem;
+      }
+
+      .back-to-top {
+        text-align: left;
+      }
     }
 
     @media print {
